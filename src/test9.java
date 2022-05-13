@@ -12,6 +12,7 @@ public class test9 {
         StringTokenizer st;
         String str;
         try {
+//            while (!(str = br.readLine()).equals("")) {
             while ((str = br.readLine()) != null) {
                 st = new StringTokenizer(str, " ");
                 int a = Integer.parseInt(st.nextToken());
