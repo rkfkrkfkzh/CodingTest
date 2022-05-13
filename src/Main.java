@@ -11,15 +11,15 @@ public class Main {
 
         StringTokenizer st;
         String str;
-        try {
+
             while ((str = br.readLine()) != null) {
                 st = new StringTokenizer(str, " ");
                 int a = Integer.parseInt(st.nextToken());
                 int b = Integer.parseInt(st.nextToken());
                 sb.append(a + b).append("\n");
             }
-        } catch (NoSuchElementException noSuchElementException) {
-            System.out.println(sb);
-        }
+
+            System.out.print(sb);
+
     }
 }

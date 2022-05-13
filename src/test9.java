@@ -23,3 +23,4 @@ public class test9 {
         }
     }
 }
+// EOF입력 방식으로 리눅스는 ctrl + D 윈도우는 ctrl + Z로 입력종료를 하면 정상적으로 예외오류 없이 출력이 된다.
