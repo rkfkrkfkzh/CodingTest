@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 
-public class Main {
+public class test14 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         HashSet<Integer> h = new HashSet<Integer>();    //  HashSet<Integer> 으로 타입을 Integer로 선언
