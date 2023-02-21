@@ -10,7 +10,8 @@ public class Greedy4 {
         int N = Integer.parseInt(br.readLine());
 
         int[] A = new int[N];
-        int[] B = new int[N];
+//        int[] B = new int[N];
+        Integer[] B = new Integer[N];
         // 두 번째 줄에서는 배열 A의 원소들을 입력받아 A 배열에 저장합니다.
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
@@ -24,12 +25,14 @@ public class Greedy4 {
         }
         // A와 B 배열을 오름차순으로 정렬합니다.
         Arrays.sort(A);
-        Arrays.sort(B);
+//        Arrays.sort(B);
+        Arrays.sort(B, Comparator.reverseOrder());
         // S 변수를 0으로 초기화합니다.
         int S = 0;
         // A 배열과 B 배열을 반복하면서, A[i]와 B[N-i-1]을 곱한 값을 S에 더합니다. 이 때, B 배열의 원소는 역순으로 접근합니다.
         for (int i = 0; i < N; i++) {
-            S += A[i] * B[N - 1 - i];
+//            S += A[i] * B[N - 1 - i];
+            S += A[i] * B[i];
 
         }
         System.out.print(S);
@@ -37,3 +40,4 @@ public class Greedy4 {
 }
 // 이 코드는 A와 B 배열을 오름차순으로 정렬한 후, 각 배열에서 가장 작은 수와 가장 큰 수를 곱하여 S 값을 계산하는 방식으로 함수 S의 값을 최소화하는 문제를 해결하는 코드입니다.
 // B 배열을 Comparator.reverseOrder()이나 Collections.reverseOrder()의 내림차순을 이용하여 A[i]*B[i]로 계산할수 도 있다
+// 주의점은 Arrays.sort를 이용하여 오름차순으로 정렬할 경우, primitive 타입을 사용해도 되지만, 내림차순을 정렬할 경우, Wrapper 클래스를 이용해야 합니다.
