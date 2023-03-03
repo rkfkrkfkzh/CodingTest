@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Greedy16 {
     static int INF = 987654321;
 
     public static void main(String[] args) throws IOException {
